@@ -20,7 +20,7 @@ shared static this()
 	router.get("*", serveStaticFiles("public"));
 
 	auto settings = new HTTPServerSettings;
-	settings.port = 8080;
+	settings.port = 80;
 	settings.errorPageHandler = toDelegate(&showError);
 
 	listenHTTP(settings, router);
