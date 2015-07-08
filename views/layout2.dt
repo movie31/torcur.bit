@@ -1,10 +1,9 @@
 doctype html
 html
 	head
-		link(rel="stylesheet", href="styles/common.css")
-		block title
-		title #{title} - Empty project
+
 	body
 		h1= title
+		block 
 		- auto pages = ["소개","who", "활동","what", "연구","how", "대안 통화","why", "블로그","blog", "연락처","contact"];
-		block body
+		body
