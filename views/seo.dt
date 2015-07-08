@@ -1,0 +1,7 @@
+extends layout
+
+block title
+	- auto title = "Seo";
+
+block body
+	p 나는 개발자다.

@@ -17,6 +17,7 @@ shared static this()
 	auto router = new URLRouter;
 	router.get("/", &showHome);
 	router.get("/about", staticTemplate!"about.dt");
+	router.get("/seo", staticTemplate!"seo.dt");
 	router.get("*", serveStaticFiles("public"));
 
 	auto settings = new HTTPServerSettings;
