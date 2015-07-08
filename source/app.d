@@ -12,6 +12,11 @@ void showError(HTTPServerRequest req, HTTPServerResponse res, HTTPServerErrorInf
 	//	HTTPServerErrorInfo, "error")(req, error);
 }
 
+string prettifyFilter(string html)
+{
+	return html.replace("<code><pre>", "<code><pre class=\"prettyprint\">");
+}
+
 shared static this()
 {
 	auto router = new URLRouter;
