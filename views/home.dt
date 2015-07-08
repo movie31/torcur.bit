@@ -6,4 +6,6 @@ block title
 block body
 	p This is the homepage of the new empty project.
 	p
-		a(href="/about") About
+		a(href="/about") 여기는
+	p
+		a(href="/seo") 서페이지
